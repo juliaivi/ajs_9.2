@@ -1,0 +1,18 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest": true
+    },
+    "extends": ["airbnb-base","plugin:import/typescript"],
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],//позволяет использовать унарные операторы
+       "import/no-unresolved": "off" //как временное устранение import/no-unresolved
+    }
+}
